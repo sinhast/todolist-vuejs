@@ -9,6 +9,7 @@
 <script>
 import TodoInputText from "@/components/TodoInputText.vue";
 import TodoListItem from "@/components/TodoListItem.vue";
+import { exists } from "fs";
 
 export default {
   components: {
@@ -25,7 +26,11 @@ export default {
 
   methods: {
     addTodo() {
-      alert("addTodo methods");
+      const trimmedText = this.newTodoText.trim();
+      if (trimmedText) {
+        this.todos.push(trimmedText);
+        this.newTodoText = "";
+      }
     }
   }
 };
