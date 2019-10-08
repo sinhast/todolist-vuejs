@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <h1>Todo List with VueJS</h1>
+    <h1 class="title is-1">Todo List with VueJS</h1>
   </div>
 </template>
 
