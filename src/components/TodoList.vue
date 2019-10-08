@@ -11,6 +11,12 @@ import TodoInputText from "@/components/TodoInputText.vue";
 export default {
   components: {
     TodoInputText
+  },
+
+  data() {
+    return {
+      todos: ["Task one", "Task two", "Task three"]
+    };
   }
 };
 </script>
