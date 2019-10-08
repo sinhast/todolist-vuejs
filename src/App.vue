@@ -1,13 +1,17 @@
 <template>
   <div id="app">
-    <h1 class="title is-1">Todo List with VueJS</h1>
+    <TodoList />
   </div>
 </template>
 
 <script>
+import TodoList from "@/components/TodoList.vue";
+
 export default {
   name: "app",
-  components: {}
+  components: {
+    TodoList
+  }
 };
 </script>
 
