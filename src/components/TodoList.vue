@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="title is-1">Todo List with VueJS</h1>
-    <TodoInputText v-model="newTodoText" />
+    <TodoInputText v-model="newTodoText" @keydown.enter="addTodo" />
     <TodoListItem :todos="todos" />
   </div>
 </template>
@@ -21,6 +21,12 @@ export default {
       newTodoText: "",
       todos: ["Task one", "Task two", "Task three"]
     };
+  },
+
+  methods: {
+    addTodo() {
+      alert("addTodo methods");
+    }
   }
 };
 </script>
