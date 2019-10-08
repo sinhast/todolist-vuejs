@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1 class="title is-1">Todo List with VueJS</h1>
-    <TodoInputText />
+    <TodoInputText v-model="newTodoText" />
     <TodoListItem :todos="todos" />
   </div>
 </template>
@@ -18,6 +18,7 @@ export default {
 
   data() {
     return {
+      newTodoText: "",
       todos: ["Task one", "Task two", "Task three"]
     };
   }
