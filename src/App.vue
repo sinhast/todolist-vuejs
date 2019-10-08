@@ -1,5 +1,5 @@
 <template>
-  <div id="app">
+  <div id="app" class="container">
     <TodoList />
   </div>
 </template>
@@ -16,4 +16,16 @@ export default {
 </script>
 
 <style lang="scss">
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 10px;
+}
+
+.container {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  margin-top: 2rem;
+}
 </style>
